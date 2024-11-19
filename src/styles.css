@@ -67,22 +67,36 @@ header {
     min-width: 500px;
 }
 
-.title {
+.content > * {
+    background-color: var(--chocolate);
+}
+
+.title-container {
     width: 80%;
     font-size: 24px;
     margin-bottom: 2em;
+    padding: 10px;
     margin-top: 30px;
-    background-color: white;
+    clip-path: polygon(0 33.3%, 6% 0, 94% 0, 100% 33.3%, 100% 66.6%, 94% 100%, 6% 100%, 0 66.6%);}
+
+.title {
+    padding: 10px 0px;
+    background-color: var(--yellow);
     clip-path: polygon(0 33.3%, 5% 0, 95% 0, 100% 33.3%, 100% 66.6%, 95% 100%, 5% 100%, 0 66.6%);
 }
 
-.about {
+.about-container {
     width: 60%;
     text-align: justify;
-    background-color: white;
     margin-bottom: 2em;
     padding: 20px;
     clip-path: polygon(0 21%, 11% 0, 89% 0, 100% 21%, 100% 79%, 89% 100%, 11% 100%, 0 79%);
+}
+
+.about {
+    padding: 20px 20px;
+    background-color: var(--yellow);
+    clip-path: polygon(0 20%, 10% 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0 80%);
 }
 
 .about > :nth-child(2){
@@ -91,12 +105,17 @@ header {
     font-size: larger;
 }
 
-.hours {
+.hours-container {
     width: 60%;
-    background-color: white;
     margin-bottom: 2em;
     padding: 20px;
     clip-path: polygon(0 21%, 11% 0, 89% 0, 100% 21%, 100% 79%, 89% 100%, 11% 100%, 0 79%);
+}
+
+.hours {
+    padding: 20px 20px;
+    background-color: var(--yellow);
+    clip-path: polygon(0 20%, 10% 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0 80%);
 }
 
 .hours-items {
@@ -110,12 +129,17 @@ header {
     text-align: left;
 }
 
-.location {
+.location-container {
     width: 60%;
-    background-color: white;
     padding: 20px;
     margin-bottom: 30px;
     clip-path: polygon(0 21%, 11% 0, 89% 0, 100% 21%, 100% 79%, 89% 100%, 11% 100%, 0 79%);
+}
+
+.location {
+    padding: 20px 20px;
+    background-color: var(--yellow);
+    clip-path: polygon(0 20%, 10% 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0 80%);
 }
 
 .location :first-child {

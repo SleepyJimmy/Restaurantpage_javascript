@@ -1,13 +1,19 @@
 :root {
     box-sizing: border-box;
-    --khaki: #ffde73;
-    --chocolate: #c16a08;
+    --yellow: #FFC60B;
+    --green: #85AE85;
+    --light-blue: #0A95FF;
+    --dark-blue: #230AFF;
+    --purple: #7766FF;
+    --lilac: #AAA0FF;
     --dark-orange: #df880a;
+    --chocolate: #c16a08;
+    --khaki: #ffde73;
 }
 
 .honeycomb_background {
     width: 100vw;
-    height: auto;
+    height: 100vh;
     position: fixed;
     z-index: -2;
     filter: saturate(1.5) brightness(0.8) contrast(0.8);
@@ -19,6 +25,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    min-width: 300px;
 }
 
 header {
@@ -29,7 +36,7 @@ header {
     background-color: var(--khaki);
 }
 
-ul {
+.nav-items {
     display: flex;
     align-items: flex-end;
     list-style: none;
@@ -37,7 +44,7 @@ ul {
     padding: 0;
 }
 
-li {
+.nav-items li {
     font-size: 20px;
     padding: 10px 30px;
     border-radius: 7%;
@@ -48,10 +55,71 @@ li {
 }
 
 #content {
-    width: 80%;
+    width: 55%;
     align-self: center;
     text-align: center;
     border-radius: 15px;
     background-color: var(--khaki);
     margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 500px;
+}
+
+.title {
+    width: 80%;
+    font-size: 24px;
+    margin-bottom: 2em;
+    margin-top: 30px;
+    background-color: white;
+    clip-path: polygon(0 33.3%, 5% 0, 95% 0, 100% 33.3%, 100% 66.6%, 95% 100%, 5% 100%, 0 66.6%);
+}
+
+.about {
+    width: 60%;
+    text-align: justify;
+    background-color: white;
+    margin-bottom: 2em;
+    padding: 20px;
+    clip-path: polygon(0 21%, 11% 0, 89% 0, 100% 21%, 100% 79%, 89% 100%, 11% 100%, 0 79%);
+}
+
+.about > :nth-child(2){
+    text-align: left;
+    padding-left: 10%;
+    font-size: larger;
+}
+
+.hours {
+    width: 60%;
+    background-color: white;
+    margin-bottom: 2em;
+    padding: 20px;
+    clip-path: polygon(0 21%, 11% 0, 89% 0, 100% 21%, 100% 79%, 89% 100%, 11% 100%, 0 79%);
+}
+
+.hours-items {
+    list-style: none;
+    padding: 0;
+}
+
+.hours > p {
+    padding-left: 10%;
+    font-size: larger;
+    text-align: left;
+}
+
+.location {
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    clip-path: polygon(0 21%, 11% 0, 89% 0, 100% 21%, 100% 79%, 89% 100%, 11% 100%, 0 79%);
+}
+
+.location :first-child {
+    padding-left: 10%;
+    font-size: larger;
+    text-align: left;
 }

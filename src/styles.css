@@ -26,6 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 300px;
+    font-family: 'Potta One', cursive;
 }
 
 header {
@@ -83,6 +84,8 @@ header {
     padding: 10px 0px;
     background-color: var(--yellow);
     clip-path: polygon(0 33.3%, 5% 0, 95% 0, 100% 33.3%, 100% 66.6%, 95% 100%, 5% 100%, 0 66.6%);
+    font-weight: bold;
+    font-size: 35px;
 }
 
 .about-container {
@@ -147,3 +150,46 @@ header {
     font-size: larger;
     text-align: left;
 }
+
+.subheader-container {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 30px;
+    clip-path: polygon(0 33.3%, 6% 0, 94% 0, 100% 33.3%, 100% 66.6%, 94% 100%, 6% 100%, 0 66.6%);
+}
+
+.subheader {
+    padding: 15px 15px;
+    background-color: var(--yellow);
+    clip-path: polygon(0 33.3%, 6% 0, 94% 0, 100% 33.3%, 100% 66.6%, 94% 100%, 6% 100%, 0 66.6%);
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+.item-container {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 30px;
+    clip-path: polygon(0 21%, 11% 0, 89% 0, 100% 21%, 100% 79%, 89% 100%, 11% 100%, 0 79%);
+}
+
+.item {
+    padding: 20px 20px;
+    background-color: var(--yellow);
+    clip-path: polygon(0 21%, 11% 0, 89% 0, 100% 21%, 100% 79%, 89% 100%, 11% 100%, 0 79%);
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.item :first-child {
+    text-align: start;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.item :nth-child(2), :nth-child(3) {
+    text-align: justify;
+}
+

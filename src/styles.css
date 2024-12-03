@@ -129,7 +129,11 @@ header {
 .hours > p {
     padding-left: 10%;
     font-size: larger;
-    text-align: left;
+}
+
+.hours li {
+    text-align: center;
+    
 }
 
 .location-container {
@@ -171,6 +175,7 @@ header {
     width: 30%;
     padding: 10px;
     margin-bottom: 30px;
+    min-width: 300px;
     clip-path: polygon(0 21%, 11% 0, 89% 0, 100% 21%, 100% 79%, 89% 100%, 11% 100%, 0 79%);
 }
 
@@ -180,7 +185,6 @@ header {
     clip-path: polygon(0 21%, 11% 0, 89% 0, 100% 21%, 100% 79%, 89% 100%, 11% 100%, 0 79%);
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
 }
 
 .item :first-child {
@@ -193,3 +197,30 @@ header {
     text-align: justify;
 }
 
+
+.contact-container {
+    width: 45%;
+    padding: 10px;
+    margin-bottom: 30px;
+    clip-path: polygon(0 21%, 11% 0, 89% 0, 100% 21%, 100% 79%, 89% 100%, 11% 100%, 0 79%);
+    min-width: 350px;
+}
+
+.contact {
+    padding: 20px 20px;
+    background-color: var(--yellow);
+    clip-path: polygon(0 20%, 10% 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0 80%);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact > h2 {
+    text-align: left;
+}
+
+.contact > p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
